@@ -12,11 +12,13 @@ const Currency = () => {
     }
 
     return (
-        <div className='alert'>
+        <div className='alert alert-success'>
             <label>Currency (</label>
-            <select value={currency} onChange={currencyChange} style={{ border: 'none' }}>
+            <select value={currency} onChange={currencyChange} style={{ border: 'none', backgroundColor: '#d2e7d6'  }}>
                 <option value="£">£ Pound</option>
                 <option value="$">$ Dollar</option>
+                <option value="€">€ Euro</option>
+                <option value="₹">₹ Ruppee</option>
             </select>
             <label>)</label>
         </div>
