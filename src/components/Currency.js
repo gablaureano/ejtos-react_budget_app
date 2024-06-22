@@ -13,11 +13,12 @@ const Currency = () => {
 
     return (
         <div className='alert'>
-            <label>Currency</label>
-            <select value={currency} onChange={currencyChange}>
+            <label>Currency (</label>
+            <select value={currency} onChange={currencyChange} style={{ border: 'none' }}>
                 <option value="£">£ Pound</option>
                 <option value="$">$ Dollar</option>
             </select>
+            <label>)</label>
         </div>
     );
 }
